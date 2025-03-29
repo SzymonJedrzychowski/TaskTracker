@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" prefHeight="200.0" prefWidth="100.0"
+      HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/23.0.1"
+      fx:controller="ui.controllers.mainscreen.MainScreenTasksController">
+    <HBox.margin>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+    </HBox.margin>
+    <Label text="Task list">
+        <font>
+            <Font size="24.0"/>
+        </font>
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </padding>
+        <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </VBox.margin>
+    </Label>
+    <TableView fx:id="tasksTableView" maxHeight="800.0" maxWidth="1.7976931348623157E308" minHeight="400.0"
+               minWidth="500.0" VBox.vgrow="ALWAYS">
+        <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </VBox.margin>
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </padding>
+        <columns>
+            <TableColumn fx:id="taskLinkColumn" prefWidth="75.0" text="Story"/>
+            <TableColumn fx:id="taskNameColumn" prefWidth="200.0" text="Name"/>
+            <TableColumn fx:id="developmentTaskLinkColumn" prefWidth="75.0" text="Development"/>
+            <TableColumn fx:id="taskStatusColumn" prefWidth="75.0" text="State"/>
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+    </TableView>
+    <Button maxWidth="1.7976931348623157E308" minWidth="100.0" mnemonicParsing="false" text="Tasks view"
+            VBox.vgrow="ALWAYS">
+        <font>
+            <Font size="16.0"/>
+        </font>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </padding>
+        <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </VBox.margin>
+    </Button>
+</VBox>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/23.0.1"
+      fx:controller="ui.controllers.mainscreen.MainScreenTimerController">
+    <HBox.margin>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+    </HBox.margin>
+    <HBox alignment="CENTER">
+        <Button fx:id="startWorkButton" minWidth="100.0" onAction="#startWorkAction" text="Start Work"
+                HBox.hgrow="ALWAYS">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Button>
+        <Button fx:id="stopWorkButton" disable="true" minWidth="100.0" onAction="#stopWorkAction"
+                text="Stop Work">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Button>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Button fx:id="pauseWorkButton" disable="true" minWidth="100.0" onAction="#pauseAction" text="Pause">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Button>
+        <Button fx:id="resumeWorkButton" disable="true" minWidth="100.0" onAction="#resumeAction" text="Resume">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Button>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Label fx:id="timerLabel" alignment="CENTER" text="0:00:00">
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+        <opaqueInsets>
+            <Insets/>
+        </opaqueInsets>
+        <Button minWidth="200.0" mnemonicParsing="false" text="View logs">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Button>
+    </HBox>
+</VBox>
